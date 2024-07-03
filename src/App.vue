@@ -1,47 +1,45 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <div class="container">
+      <header>
+        <h1 class="header-title">Memo</h1>
+        <button class="header-button">+</button>
+      </header>
+      <div>[card]</div>
+    </div>
   </main>
 </template>
 
 <style scoped>
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  max-width: 900px;
+  padding: 10px;
+  margin: 0 auto;
+}
 header {
-  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.header-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #495a7d;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.header-button {
+  border: none;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #495a7d;
+  color: white;
 }
 </style>
