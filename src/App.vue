@@ -5,7 +5,44 @@
         <h1 class="header-title">Memo</h1>
         <button class="header-button">+</button>
       </header>
-      <div>[card]</div>
+      <div class="card-container">
+        <div class="card">
+          <p class="card-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            voluptatibus pariatur nesciunt qui magni eaque aliquid doloremque
+            aspernatur eligendi cumque porro consequatur, aliquam et tempora
+            ipsam reprehenderit mollitia ullam labore!
+          </p>
+          <p class="card-date">12/12/2023</p>
+        </div>
+        <div class="card">
+          <p class="card-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            voluptatibus pariatur nesciunt qui magni eaque aliquid doloremque
+            aspernatur eligendi cumque porro consequatur, aliquam et tempora
+            ipsam reprehenderit mollitia ullam labore!
+          </p>
+          <p class="card-date">12/12/2023</p>
+        </div>
+        <div class="card">
+          <p class="card-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            voluptatibus pariatur nesciunt qui magni eaque aliquid doloremque
+            aspernatur eligendi cumque porro consequatur, aliquam et tempora
+            ipsam reprehenderit mollitia ullam labore!
+          </p>
+          <p class="card-date">12/12/2023</p>
+        </div>
+        <div class="card">
+          <p class="card-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            voluptatibus pariatur nesciunt qui magni eaque aliquid doloremque
+            aspernatur eligendi cumque porro consequatur, aliquam et tempora
+            ipsam reprehenderit mollitia ullam labore!
+          </p>
+          <p class="card-date">12/12/2023</p>
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -41,5 +78,22 @@ header {
   border-radius: 100%;
   background-color: #495a7d;
   color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 225px;
+  height: 225px;
+  padding: 10px;
+  background-color: #ffa6c1;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 </style>
